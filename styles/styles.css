@@ -1,0 +1,161 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(184, 184, 231);
+}
+
+/* Reset of margin and padding */
+p, h1, h2, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile First Design */
+
+p{ 
+    color: rgb(86, 92, 107);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    border-radius: 10px;
+    margin: 1em;
+    text-align: center;
+    background: white;
+}
+
+.main-img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: solid 1px blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.order-details {
+    padding: 1.5em;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: .3em 0 1em;
+}
+
+.desc {
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    color:rgb(58, 54, 94);
+}
+
+.plans {
+    display: block;
+    text-align: center;
+    /* background: rgb(243, 245, 248); */
+    margin: 2em;
+    padding: 1em;
+}
+
+li:first-child {
+    margin-left: -1em;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    text-align: left;
+    display: block;
+    margin-right: 1em;
+}
+
+.icon, .plan-desc {
+    margin-left: -3em;
+}
+
+h2 {
+    font-size: 1em;
+    margin-bottom: .4em;
+}
+
+.plans h2, .plans p {
+    text-align: right;
+}
+
+.change-btn {
+    display: inline-block;
+    color: blue;
+    font-weight: 900;
+    border-bottom: 1px solid blue;
+    padding-top: .7em;
+    margin-right: -3em;
+}
+
+/* .change-btn:visited {
+    color: gray;
+} */
+
+.change-btn:hover {
+    border-bottom: none;
+    color:hsl(245, 58%, 55%);
+}
+
+button {
+    width: 100%;
+    border: 1px solid ;
+    font-weight: 800;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background: blue;
+
+} 
+
+button:hover {
+    background: hsl(245, 55%, 62%);
+    color: white;
+}
+
+.cta-1 {
+    margin-bottom: 1em;
+    box-shadow: 0px 10px 30px rgb(175, 218, 235);
+}
+
+.cta-2 {
+    border: none;
+    background: white;
+    color: hsl(224, 23%, 55%);
+    /* box-shadow: 1px .5px 3px; */
+}
+
+.cta-2:hover {
+    color: hsl(223, 47%, 23%);
+    background: white;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* body {
+        background: url("..\order-summary\images\pattern-background-desktop.svg");
+    } */
+
+    .container {
+        width: 50%;
+        margin: 10% auto;
+    }
+
+
+}
